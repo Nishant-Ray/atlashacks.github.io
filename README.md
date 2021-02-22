@@ -1,1 +1,1 @@
-# atlashacks.github.io
+# The Official AtlasHacks GitHub Repository
