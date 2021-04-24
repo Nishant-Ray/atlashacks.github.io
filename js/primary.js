@@ -3,6 +3,11 @@ function goToElement(elem, position) {
     element.scrollIntoView({behavior: "smooth", block: position, inline: "nearest"});
 }
 
+function scrollToElement(elem, position) {
+    var element = document.getElementById(elem);
+    element.scrollIntoView({behavior: "smooth", block: position, inline: "nearest"});
+}
+
 function updateScheduleSize() {
     var dayList1 = document.getElementById("day-list-1");
     var dayList2 = document.getElementById("day-list-2");
@@ -11,7 +16,6 @@ function updateScheduleSize() {
         dayList2.style.height = dayList1.getBoundingClientRect().height + "px";
     } else {
         dayList2.style.height = "auto";
-        console.log("small");
         
     }
 }
@@ -73,4 +77,120 @@ function devpostOffHover(i) {
         document.getElementsByClassName("devpost-circle-2")[0].style.transform = "scale(1)";
         document.getElementsByClassName("devpost-icon-2")[0].src = "imgs/devpost-icon.png";
     }		
+}
+
+function isInViewport(elemClass) {
+    const rect = document.getElementsByClassName(elemClass)[1].getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+    );
+}
+
+function countUp(metricId, metric) {
+    var elem = document.getElementById(metricId);
+    var num = parseInt(elem.textContent);
+    var counter = setInterval(function increment() {
+        if(num >= metric) {
+            clearInterval(counter);
+        } else {
+            num++;
+            elem.textContent = num + "";
+        }
+        
+    }, 2500/metric);
+}
+
+function countMetrics() {
+    if(isInViewport("section-subtitle")) {
+        countUp('participantsMetric', 200);
+        countUp('submissionsMetric', 60);
+        countUp('countriesMetric', 10);
+    }
+}
+
+function openSchedule(row) {
+
+    var extended = "";
+    var compressed = "";
+
+    if(window.innerWidth > 1300) {
+        extended = "325px";
+        compressed = "70px";
+    } else if (window.innerWidth > 900){
+        extended = Math.round(325 / window.innerWidth * 100) + 250 + "px";
+        compressed = Math.round(70 / window.innerWidth * 100) + "px";
+    } else if (window.innerWidth > 575){
+        extended = Math.round(325 / window.innerWidth * 100) + 150 + "px";
+        compressed = Math.round(70 / window.innerWidth * 100) + "px";
+    } else if (window.innerWidth > 500){
+        extended = Math.round(325 / window.innerWidth * 100) + 150 + "px";
+        compressed = Math.round(70 / window.innerWidth * 100) + "px";
+    } else {
+        extended = Math.round(325 / window.innerWidth * 100) + 100 + "px";
+        compressed = Math.round(70 / window.innerWidth * 100) + "px";
+    }
+
+    var n = 0;
+    var rowContainer = row.parentNode;
+    for (let i = 0; i < rowContainer.getElementsByClassName("schedule-row").length; i++) {
+        var nRow = rowContainer.getElementsByClassName("schedule-row")[i];
+        if(nRow === row) {
+            n = i;
+            break;
+        }
+    }
+
+    var info = row.getElementsByClassName("schedule-info")[0];
+
+    if(row.style.height != extended) {
+        row.style.height = extended;
+        setTimeout(function() { info.style.display = "block"; }, 100);
+
+        if(n != rowContainer.getElementsByClassName("schedule-row").length - 1) {
+            var time = rowContainer.getElementsByClassName("schedule-row")[n + 1].getElementsByClassName("schedule-time")[0];
+            var event = rowContainer.getElementsByClassName("schedule-row")[n + 1].getElementsByClassName("schedule-event")[0];
+
+            time.style.borderTopLeftRadius = "10px";
+            event.style.borderTopRightRadius = "10px";
+        } else {
+            var time = rowContainer.getElementsByClassName("schedule-row")[n].getElementsByClassName("schedule-time")[0];
+            var event = rowContainer.getElementsByClassName("schedule-row")[n].getElementsByClassName("schedule-event")[0];
+
+            time.style.borderBottomLeftRadius = "0px";
+            event.style.borderBottomRightRadius = "0px";
+        }
+        
+    } else {
+        row.style.height = compressed;
+        setTimeout(function() { info.style.display = "none"; }, 100);
+
+        if(n != rowContainer.getElementsByClassName("schedule-row").length - 1) {
+            var time = rowContainer.getElementsByClassName("schedule-row")[n + 1].getElementsByClassName("schedule-time")[0];
+            var event = rowContainer.getElementsByClassName("schedule-row")[n + 1].getElementsByClassName("schedule-event")[0];
+
+            time.style.borderTopLeftRadius = "0px";
+            event.style.borderTopRightRadius = "0px";
+        } else {
+            var time = rowContainer.getElementsByClassName("schedule-row")[n].getElementsByClassName("schedule-time")[0];
+            var event = rowContainer.getElementsByClassName("schedule-row")[n].getElementsByClassName("schedule-event")[0];
+
+            time.style.borderBottomLeftRadius = "10px";
+            event.style.borderBottomRightRadius = "10px";
+        }
+    }
+    
+}
+
+function openFAQ(FAQ) {
+    var answerDiv = FAQ.getElementsByClassName("faq-answer")[0];
+    if(answerDiv.style.display != "block") {
+        answerDiv.style.display = "block";
+    } else {
+        answerDiv.style.display = "none";
+    }
+    
 }
