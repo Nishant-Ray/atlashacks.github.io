@@ -189,7 +189,7 @@ ul#menu li {
     box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.5);
 }
 
-#register-button {
+.main-button-offset {
     margin-right: 20px;
 }
 
@@ -815,6 +815,7 @@ ul#menu li {
 }
 
 @media screen and (max-width: 760px) {
+
     .theme {
         width: 65vw;
         margin-top: 20px;
@@ -884,6 +885,16 @@ ul#menu li {
         margin-bottom: 2.9vw;
     }
 
+}
+
+@media screen and (max-width: 748px) {
+    #header {
+        height: 100vw;
+    }
+
+    #donate-button {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {    
