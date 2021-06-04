@@ -428,7 +428,7 @@ ul#menu li {
 
 #sponsors {
     background-color: rgb(242, 242, 242);
-    padding: 60px;
+    padding: 50px;
 }
 
 #sponsors-title {
@@ -448,7 +448,7 @@ ul#menu li {
 }
 
 .sponsor {
-    margin: 20px;
+    margin: 30px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -457,15 +457,50 @@ ul#menu li {
     box-shadow: none;
 }
 
-#echoAR {
-    width: 521px;
-    height: 96px;
+#hackplus {
+    width: 30%;
 }
+
+.reg {
+    width: 27.5%;
+}
+
+/* #wolfram-language {
+    width: 25%;
+}
+
+#onepassword {
+    width: 25%;
+}
+
+#taskade {
+    width: 25%;
+}
+
+#framer {
+    width: 25%;
+}
+
+#aops {
+    width: 25%;
+}
+
+#echoAR {
+    width: 25%;
+}
+
+#balsamiq {
+    width: 25%;
+}
+
+#inside-dev {
+    width: 25%;
+} */
 
 .sponsor:hover {
     cursor: pointer;
     transform: scale(1.05);
-    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.25); */
 }
 
 #team {
@@ -749,6 +784,16 @@ ul#menu li {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #hackplus {
+        width: 50%;
+    }
+
+    .reg {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     ul#menu {
         font-size: 2vw;
@@ -842,9 +887,12 @@ ul#menu li {
         margin-top: -20px;
     }
 
-    .sponsor {
-        width: 20vw;
-        height: 20vw;
+    #hackplus {
+        width: 80%;
+    }
+
+    .reg {
+        width: 80%;
     }
 
     .team-div {
