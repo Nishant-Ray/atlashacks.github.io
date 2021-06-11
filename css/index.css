@@ -465,6 +465,12 @@ ul#menu li {
     width: 27.5%;
 }
 
+#framer {
+    margin-left: 8.3vw;
+    margin-right: -5.3vw;
+    transform: scale(1.5);
+}
+
 /* #wolfram-language {
     width: 25%;
 }
@@ -782,6 +788,12 @@ ul#menu li {
     .schedule-detail {
         font-size: 2.3vw;
     }
+
+    #framer {
+        margin-left: 5vw;
+        margin-right: -3vw;
+        transform: scale(1.25);
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -792,11 +804,23 @@ ul#menu li {
     .reg {
         width: 50%;
     }
+
+    #framer {
+        margin-left: 40vw;
+        margin-right: 0vw;
+        transform: scale(1.75);
+    }
 }
 
 @media screen and (max-width: 1050px) {
     ul#menu {
         font-size: 2vw;
+    }
+
+    #framer {
+        margin-left: 35vw;
+        margin-right: 0vw;
+        transform: scale(1.75);
     }
 
     .team-div {
@@ -818,6 +842,14 @@ ul#menu li {
     .team-body {
         margin-top: -10px;
         font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #framer {
+        margin-left: 30vw;
+        margin-right: 0vw;
+        transform: scale(1.75);
     }
 }
 
@@ -859,6 +891,22 @@ ul#menu li {
     }
 }
 
+@media screen and (max-width: 900px) {
+    #framer {
+        margin-left: 21vw;
+        margin-right: 0vw;
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #framer {
+        margin-left: 18vw;
+        margin-right: 0vw;
+        transform: scale(1.5);
+    }
+}
+
 @media screen and (max-width: 760px) {
 
     .theme {
@@ -893,6 +941,12 @@ ul#menu li {
 
     .reg {
         width: 80%;
+    }
+
+    #framer {
+        margin-left: 27vw;
+        margin-right: 5vw;
+        transform: scale(1.85);
     }
 
     .team-div {
@@ -942,6 +996,30 @@ ul#menu li {
 
     #donate-button {
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    #framer {
+        margin-left: 25vw;
+        margin-right: 5vw;
+        transform: scale(1.75);
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #framer {
+        margin-left: 22vw;
+        margin-right: 5vw;
+        transform: scale(1.75);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #framer {
+        margin-left: 18.5vw;
+        margin-right: 5vw;
+        transform: scale(1.5);
     }
 }
 
@@ -1069,6 +1147,22 @@ ul#menu li {
     }
 }
 
+@media screen and (max-width: 550px) {
+    #framer {
+        margin-left: 16vw;
+        margin-right: 5vw;
+        transform: scale(1.4);
+    }
+}
+
+@media screen and (max-width: 515px) {
+    #framer {
+        margin-left: 12vw;
+        margin-right: 5vw;
+        transform: scale(1.25);
+    }
+}
+
 @media screen and (max-width: 450px) {
     .schedule-time {
         height: 14vw;
@@ -1078,6 +1172,12 @@ ul#menu li {
     .schedule-event {
         height: 14vw;
         line-height: 3;
+    }
+
+    #framer {
+        margin-left: 11vw;
+        margin-right: 5vw;
+        transform: scale(1.1);
     }
 }
 
@@ -1090,6 +1190,12 @@ ul#menu li {
     .schedule-event {
         height: 16vw;
         line-height: 3.75;
+    }
+
+    #framer {
+        margin-left: 7vw;
+        margin-right: 5vw;
+        transform: scale(1);
     }
 
     .social-button {
@@ -1106,4 +1212,17 @@ ul#menu li {
         font-size: 3vw;
     }
 
+}
+
+@media screen and (max-width: 380px) {
+    #sponsor-panel {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #framer {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        transform: scale(0.85);
+    }
 }
