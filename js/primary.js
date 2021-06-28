@@ -185,6 +185,14 @@ function openSchedule(row) {
     
 }
 
+function openAllSchedules() {
+    for (let i = 0; i < document.getElementsByClassName("schedule-row").length; i++) {
+        var row = document.getElementsByClassName("schedule-row")[i];
+        openSchedule(row);
+        openSchedule(row);
+    }
+}
+
 function adjustEventTitle(rowId) {
     if(window.innerWidth <= 776) {
         var row = document.getElementById(rowId);
