@@ -46,7 +46,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	<!-- Browser Tab Icon -->
-	<link rel="shortcut icon" href="imgs/AtlasHacks 2/AtlasHacks2Icon.png"/>
+	<link rel="shortcut icon" href="imgs/AtlasHacks 2/AtlasHacks 2 Logo Transparent.png"/>
 
     <!-- CSS stylesheets -->
 	<link rel="stylesheet" href="css/index.css">
@@ -63,11 +63,11 @@
 
 <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '907027d0-c442-440e-a070-ddff2966c37f', f: true }); done = true; } }; })();</script>
 
-<body style="overflow-x: hidden;" onscroll="countMetrics()">
+<body style="overflow-x: hidden;" onload="adjustEventTitle('mykolaWorkshop')" onscroll="countMetrics()" onresize="adjustEventTitle('mykolaWorkshop')">
     
 	<div id="navbar">
 		<br>
-		<img id="nav-home" src="imgs/AtlasHacks 2/AtlasHacks2Icon.png" onclick="scrollToElement('navbar', 'start')">
+		<img id="nav-home" src="imgs/AtlasHacks 2/AtlasHacks 2 Logo Transparent.png" onclick="scrollToElement('navbar', 'start')">
 		<ul id="menu">
 			<!-- <li class="nav-list-item">
 				<a class="nav-button" href="https://forms.gle/AP1GPHpzrCHyotyE9" target="_blank">Register</a>
@@ -174,12 +174,12 @@
 			<h1 class="schedule-day-title">Friday (7/2)</h1>
 			<div class="schedule-day">
 				<div class="schedule-row" onclick="openSchedule(this)">
-					<h2 class="schedule-time" style="border-top-left-radius: 10px;">7:30 AM</h2>
+					<h2 class="schedule-time" style="border-top-left-radius: 10px;">8:00 AM</h2>
 					<h2 class="schedule-event" style="border-top-right-radius: 10px;">Opening Ceremony</h2>
 					<div class="schedule-info">
-						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 7:30 AM - 8:00 AM</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 8:00 AM</h4>
 						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> A short commencement ceremony to kick off AtlasHacks II!</h4>
-						<!-- <h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://zoom.com">Zoom Link</a></h4> -->
+						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank">YouTube Premiere</a></h4>
 					</div>
 				</div>
 				<br><br>
@@ -188,60 +188,60 @@
 					<h2 class="schedule-event">Hacking Commences</h2>
 					<div class="schedule-info">
 						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 8:00 AM</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> The official start of the hacking period!</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> The official start of the hacking period and speed round!</h4>
 						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://atlashacks2.devpost.com/">Devpost</a></h4>
 					</div>
 				</div>
 				<br><br>
-				<!-- <div class="schedule-row" onclick="openSchedule(this)">
+				<div class="schedule-row" id="mykolaWorkshop" onclick="openSchedule(this)">
 					<h2 class="schedule-time">11:00 AM</h2>
-					<h2 class="schedule-event">echoAR Workshop</h2>
+					<h2 class="schedule-event">Intro to Embedded Systems Workshop</h2>
 					<div class="schedule-info">
-						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 8:00 AM - 8:30 AM</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> A short commencement ceremony to kick off AtlasHacks II!</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://zoom.com">Zoom Link</a></h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 11:00 AM - 11:30 AM</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> An introduction to embedded systems hosted by Mykola Zaitsev, who is a Professional Embedded Engineer at F-Lab.</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://tinyurl.com/ah2events">Zoom Link</a></h4>
 					</div>
 				</div>
-				<br><br> -->
+				<br><br>
 				<div class="schedule-row" onclick="openSchedule(this)">
-					<h2 class="schedule-time" style="border-bottom-left-radius: 10px;">4:00 PM</h2>
-					<h2 class="schedule-event" style="border-bottom-right-radius: 10px;">Speed Round Ends</h2>
+					<h2 class="schedule-time">4:00 PM</h2>
+					<h2 class="schedule-event">Speed Round Ends</h2>
 					<div class="schedule-info">
 						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 4:00 PM</h4>
 						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> Submissions close for the 8-hour long speed round!</h4>
 						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://atlashacks2.devpost.com/">Devpost</a></h4>
 					</div>
 				</div>
+				<br><br>
+				<div class="schedule-row" onclick="openSchedule(this)">
+					<h2 class="schedule-time" style="border-bottom-left-radius: 10px;">7:00 PM</h2>
+					<h2 class="schedule-event" style="border-bottom-right-radius: 10px;">Brawl Stars Tournament</h2>
+					<div class="schedule-info">
+						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 7:00 PM - 9:00 PM</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> Take a break from hacking and join the Brawl Stars Tournament!</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://discord.gg/EBsGt4KRsm">Discord</a></h4>
+					</div>
+				</div>
 			</div>
 
 			<h1 class="schedule-day-title">Saturday (7/3)</h1>
 			<div class="schedule-day">
-				<!-- <div class="schedule-row" onclick="openSchedule(this)">
-					<h2 class="schedule-time" style="border-top-left-radius: 10px;">11:00 AM</h2>
-					<h2 class="schedule-event" style="border-top-right-radius: 10px;">Workshop</h2>
-					<div class="schedule-info">
-						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 8:00 AM - 8:30 AM</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> A short commencement ceremony to kick off AtlasHacks II!</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://zoom.com">Zoom Link</a></h4>
-					</div>
-				</div>
-				<br><br> -->
 				<div class="schedule-row" onclick="openSchedule(this)">
-					<h2 class="schedule-time" style="border-top-left-radius: 10px;">11:00 AM</h2>
-					<h2 class="schedule-event" style="border-top-right-radius: 10px;">Rocket League Tournament</h2>
+					<h2 class="schedule-time" style="border-top-left-radius: 10px;">10:00 AM</h2>
+					<h2 class="schedule-event" style="border-top-right-radius: 10px;">Entrepreneurial Assets Workshop</h2>
 					<div class="schedule-info">
-						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/3, 11:00 AM - 1:00 PM</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> Take a break from hacking and join the Rocket League Tournament!</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://discord.gg/EBsGt4KRsm">Discord</a></h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/3, 10:00 AM - 10:30 AM</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> Attend the Entrepreneurial Assets Workshop hosted by Galicia Gordon (Founder at Leading Learners) for tips to discover your "why," establish your values, and turn your idea into a reality.</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://tinyurl.com/ah2events">Zoom Link</a></h4>
 					</div>
 				</div>
 				<br><br>
 				<div class="schedule-row" onclick="openSchedule(this)">
-					<h2 class="schedule-time" style="border-bottom-left-radius: 10px;">3:00 PM</h2>
-					<h2 class="schedule-event" style="border-bottom-right-radius: 10px;">Brawl Stars Tournament</h2>
+					<h2 class="schedule-time" style="border-bottom-left-radius: 10px;">7:00 PM</h2>
+					<h2 class="schedule-event" style="border-bottom-right-radius: 10px;">Rocket League Tournament</h2>
 					<div class="schedule-info">
-						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/3, 3:00 PM - 5:00 PM</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> Take a break from hacking and join the Brawl Stars Tournament!</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/3, 7:00 PM - 9:00 PM</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> Take a break from hacking and join the Rocket League Tournament!</h4>
 						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://discord.gg/EBsGt4KRsm">Discord</a></h4>
 					</div>
 				</div>
@@ -249,29 +249,19 @@
 
 			<h1 class="schedule-day-title">Sunday (7/4)</h1>
 			<div class="schedule-day" style="margin-bottom: 10px;">
-				<!-- <div class="schedule-row" onclick="openSchedule(this)">
-					<h2 class="schedule-time" style="border-top-left-radius: 10px;">11:00 AM</h2>
-					<h2 class="schedule-event" style="border-top-right-radius: 10px;">Workshop</h2>
-					<div class="schedule-info">
-						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 8:00 AM - 8:30 AM</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> A short commencement ceremony to kick off AtlasHacks II!</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://zoom.com">Zoom Link</a></h4>
-					</div>
-				</div>
-				<br><br> -->
-				<!-- <div class="schedule-row" onclick="openSchedule(this)">
-					<h2 class="schedule-time">3:00 PM</h2>
-					<h2 class="schedule-event">Workshop</h2>
-					<div class="schedule-info">
-						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/2, 8:00 AM - 8:30 AM</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> A short commencement ceremony to kick off AtlasHacks II!</h4>
-						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://zoom.com">Zoom Link</a></h4>
-					</div>
-				</div>
-				<br><br> -->
 				<div class="schedule-row" onclick="openSchedule(this)">
-					<h2 class="schedule-time" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">11:00 PM</h2>
-					<h2 class="schedule-event" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">Hacking Ends</h2>
+					<h2 class="schedule-time" style="border-top-left-radius: 10px;">10:00 AM</h2>
+					<h2 class="schedule-event" style="border-top-right-radius: 10px;">A Conversation with a CEO</h2>
+					<div class="schedule-info">
+						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/4, 10:00 AM - 10:30 AM</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> We'll be having a conversation with Raghav Poddar, the CEO of Forward Kitchens.</h4>
+						<h4 class="schedule-detail"><i class="icon fa fa-external-link"></i> <a class="link" target="_blank" href="https://tinyurl.com/ah2events">Zoom Link</a></h4>
+					</div>
+				</div>
+				<br><br>
+				<div class="schedule-row" onclick="openSchedule(this)">
+					<h2 class="schedule-time" style="border-bottom-left-radius: 10px;">11:00 PM</h2>
+					<h2 class="schedule-event" style="border-bottom-right-radius: 10px;">Hacking Ends</h2>
 					<div class="schedule-info">
 						<h4 class="schedule-detail"><i class="icon fa fa-clock-o"></i> 7/4, 11:00 PM</h4>
 						<h4 class="schedule-detail"><i class="icon fa fa-info-circle"></i> Submissions close marking the end of the hacking period!</h4>
@@ -279,6 +269,10 @@
 					</div>
 				</div>
 			</div>
+			
+			<br><br><br>
+			<h2 class="side-note">Winners to be Announced on July 11th at 5:00 PM (PST)</h2>
+
 		</div>
 	</div>
 
@@ -354,6 +348,61 @@
 				<h3 class="team-body">Outreach</h3>
 			</div>
 
+		</div>
+
+		<br><br><br><br>
+
+		<h1 class="judges-title">Judges</h1>
+		
+		<div id="judges-container">
+
+			<div class="judge-div">
+				<img class="judge-image" src="imgs/AtlasHacks 2/Judges/Raghav.JPG" alt="Raghav">
+				<h2 class="judge-subtitle">Raghav Poddar</h2>
+				<h3 class="judge-body">CEO of Forward Kitchens</h3>
+			</div>
+
+			<div class="judge-div">
+				<img class="judge-image" src="imgs/AtlasHacks 2/Judges/galicia.jpeg" alt="Galicia">
+				<h2 class="judge-subtitle">Galicia Gordon</h2>
+				<h3 class="judge-body">Founder of Leading Learners</h3>
+			</div>
+
+			<div class="judge-div">
+				<img class="judge-image" src="imgs/AtlasHacks 2/Judges/anton.jpg" alt="Anton">
+				<h2 class="judge-subtitle">Anton Yarkov</h2>
+				<h3 class="judge-body">Chief of Development Staff at Access Softek</h3>
+			</div>
+
+			<div class="judge-div">
+				<img class="judge-image" src="imgs/AtlasHacks 2/Judges/vitalii.jpg" alt="Vitalii">
+				<h2 class="judge-subtitle">Vitalii Honcharuk</h2>
+				<h3 class="judge-body">Senior Software Engineer at Monster Lead Group</h3>
+			</div>
+
+			<div class="judge-div">
+				<img class="judge-image" src="imgs/AtlasHacks 2/Judges/abhay.jpeg" alt="Abhay">
+				<h2 class="judge-subtitle">Abhay Venkatesh</h2>
+				<h3 class="judge-body">Software Engineer at Anduril Industries</h3>
+			</div>
+
+			<div class="judge-div">
+				<img class="judge-image" src="imgs/AtlasHacks 2/Judges/markos.jpg" alt="Markos">
+				<h2 class="judge-subtitle">Markos Georghiades</h2>
+				<h3 class="judge-body">Researcher at University of Waterloo</h3>
+			</div>
+
+			<div class="judge-div">
+				<img class="judge-image" src="imgs/AtlasHacks 2/Judges/michael.jpg" alt="Lev">
+				<h2 class="judge-subtitle">Michael Pautov</h2>
+				<h3 class="judge-body">Software Engineer at Deem, Inc.</h3>
+			</div>
+
+			<div class="judge-div">
+				<img class="judge-image" src="imgs/AtlasHacks 2/Judges/lev.jpg" alt="Lev">
+				<h2 class="judge-subtitle">Lev Gubin</h2>
+				<h3 class="judge-body">Software Engineer at Zalando</h3>
+			</div>
 		</div>
 
 	</div>

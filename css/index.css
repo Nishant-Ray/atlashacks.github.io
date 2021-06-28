@@ -574,6 +574,56 @@ ul#menu li {
     color: rgb(242, 242, 242);
 }
 
+.judges-title {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+}
+
+#judges-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.judge-div {
+    width: 300px;
+    margin: 20px;
+}
+
+.judge-image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    border: 10px white solid;
+    transition: all 0.2s ease-in-out;
+}
+
+.judge-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 50px 0 rgba(255, 255, 255, 0.5);
+}
+
+.judge-subtitle {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+
+.judge-body {
+    margin-top: -10px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(242, 242, 242);
+}
+
 #faqs {
     background-color: rgb(242, 242, 242);
     padding: 60px;
@@ -948,6 +998,27 @@ ul#menu li {
         margin-top: -10px;
         font-size: 2.5vw;
     }
+
+    .judge-div {
+        width: 30vw;
+        margin: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .judge-image {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .judge-subtitle {
+        font-size: 3vw;
+    }
+    
+    .judge-body {
+        margin-top: -10px;
+        font-size: 2.5vw;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -981,6 +1052,10 @@ ul#menu li {
         padding: 0;
     }
 
+    .schedule-row {
+        height: 15vw;
+    }
+
     .schedule-time {
         height: 10vw;
         line-height: 2;
@@ -992,7 +1067,7 @@ ul#menu li {
     }
 
     .schedule-info {
-        margin-top: -20px;
+        margin-top: 0px;
     }
 
     .another-question {
@@ -1076,6 +1151,15 @@ ul#menu li {
     }
 
     .team-image {
+        border: 1.5vw white solid;
+    }
+
+    .judge-div {
+        width: 25vw;
+        margin: 20px;
+    }
+
+    .judge-image {
         border: 1.5vw white solid;
     }
 

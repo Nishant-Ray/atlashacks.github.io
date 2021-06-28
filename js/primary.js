@@ -185,6 +185,15 @@ function openSchedule(row) {
     
 }
 
+function adjustEventTitle(rowId) {
+    if(window.innerWidth <= 776) {
+        var row = document.getElementById(rowId);
+        var rowEvent = row.getElementsByClassName("schedule-event")[0];
+
+        rowEvent.style.fontSize = "2.5vw";
+    }
+}
+
 function openFAQ(FAQ) {
     var answerDiv = FAQ.getElementsByClassName("faq-answer")[0];
     if(answerDiv.style.display != "block") {
